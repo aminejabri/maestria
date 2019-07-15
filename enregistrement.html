@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Poca - Podcast &amp; Audio Template">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Title -->
+      <title>Poca - Podcast &amp; Audio Template</title>
+      <!-- Favicon -->
+      <link rel="icon" href="./img/bg-img/icone.jpg">
+      <!-- Core Stylesheet -->
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+       <!-- ***** Header Area Start ***** -->
+       <header class="header-area2">
+           <div class="main-header-area  sticky sticky2">
+               <div class="classy-nav-container breakpoint-off">
+                   <nav class="classy-navbar justify-content-between" >
+                       <div class="classy-menu">
+                           <div class="classynav">
+                               <ul >
+                                   <li ><a href="./index.html"><i class="fa fa-home"></i> Accueil</a></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="classy-menu">
+                           <div class="classynav">
+                               <ul id="nav">
+                                   <li ><a href="./trio-tosca-et-nous.html">TRIO TOSCA Et NOUS</a></li>
+                                   <li ><a href="./coiture-de-clarinet.html">QUATUOR DE CLARINETTES SIB&LA</a></li>
+                                   <li ><a href="concerts.html">NOS CONCERTS</a></li>
+                                   <li  class="current-item"><a href="enregistrement.html">ENREGISTREMENT FRANCIS TROPINI</a></li>
+                                   <li ><a href="#contact">CONTACT</a></li>
+                               </ul>
+                           </div>
+                           <!-- Nav End -->
+                       </div>
+                   </nav>
+               </div>
+           </div>
+       </header>
+       <!-- ***** Header Area End ***** -->
+
+       <div class="w-100 p-4" style="background-color: transparent;"></div>
+      <!-- ***** Welcome Area Start ***** -->
+      <section class="welcome-area mt-100 mb-80">
+        <div class="poca-featured-music-area mt-50">
+          <div class="container">
+            <div class="row mb-50">
+              <div class="col-12">
+                <div class="poca-music-area box-shadow d-flex align-items-center flex-wrap border" data-animation="fadeInUp" data-delay="900ms">
+                  <div class="poca-music-content">
+                    <h2>FRANCIS TROPINI - Trio de Brahms Opus 114</h2>
+                    <div class="music-meta-data">
+                      <p>By  <a href="#" class="music-author">FRANCIS TROPINI</a> | <a href="#" class="music-duration">00:23:34</a></p>
+                    </div>
+                    <!-- Music Player -->
+                    <div class="poca-music-player">
+                      <audio preload="auto" controls>
+                        <source src="audio/Trio-de-Brams.mp3">
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-50">
+              <div class="col-12">
+                <div class="poca-music-area box-shadow d-flex align-items-center flex-wrap border" data-animation="fadeInUp" data-delay="900ms">
+                  <div class="poca-music-content">
+                    <h2>FRANCIS TROPINI - Qintette De Brahms</h2>
+                    <div class="music-meta-data">
+                      <p>By  <a href="#" class="music-author">FRANCIS TROPINI</a> | <a href="#" class="music-duration">00:38:28</a></p>
+                    </div>
+                    <!-- Music Player -->
+                    <div class="poca-music-player">
+                      <audio preload="auto" controls>
+                        <source src="audio/quintettedebrahms.mp3">
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ******* All JS ******* -->
+
+            <!-- ***** Contact form ***** -->
+      <section id="contact" class="poca-newsletter-area bg-img bg-overlay pt-50 jarallax" style="background-image: url(img/bg-img/15.jpg);">
+         <div class="container">
+            <div class="row align-items-center">
+               <!-- Newsletter Content -->
+               <!-- Newsletter Form -->
+               <div class="col-12">
+                  <div class="contact-form">
+                     <div class="contact-heading">
+                        <h2  class="font-center font-MTCors color-white shadow-rose" >POUR… nous encourager, nous donner votre avis, organiser un concert, une animation n'hésitez pas à nous contacter.</h2>
+                     </div>
+                     <!-- Form -->
+                     <form id="fr1">
+                        <div class="row">
+                           <div class="col-12">
+                              <input type="text" id="name" name="message-name" class="form-control mb-30" placeholder="Votre nom">
+                           </div>
+                           <div class="col-12">
+                              <input type="email" id="email" name="message-email" class="form-control mb-30" placeholder="Votre Email">
+                           </div>
+                           <div class="col-12">
+                              <textarea name="message" id="message" class="form-control mb-30" placeholder="Votre Message"></textarea>
+                           </div>
+                           <div class="col-12">
+                              <button type="button" id="contact-submit" class=" poca-btn mb-30">Envoyer</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- jQuery js -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- Bootstrap js -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- All js -->
+      <script src="js/poca.bundle.js"></script>
+      <!-- Active js -->
+      <script src="js/default-assets/active.js"></script>
+      <!-- for fonts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+
+      <script>
+        $(document).ready(function(){
+            $("#contact-submit").click(function(){
+
+                $.post(
+                    'http://www.maestria.ovh/index.php/wp-json/contact-form-7/v1/contact-forms/53/feedback', // Un script PHP que l'on va créer juste après
+                    {
+                      '_wpcf7': '53',
+                      '_wpcf7_version': '5.1.3',
+                      '_wpcf7_locale': 'fr_FR',
+                      '_wpcf7_unit_tag': 'wpcf7-f53-p7-o1',
+                      '_wpcf7_container_post': '7',
+                      'message-name': $("#name").val(),
+                      'message-email': $("#email").val(),
+                      'your-message': $("#message").val()
+                    },
+
+                    function(data){
+                      alert("Message envoyer avec Success");
+                    },
+
+                    'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
+                 );
+
+            });
+
+        });
+      </script>
+
+
+      <script>
+         WebFont.load({
+           google: {
+             families: ["Cookie:regular"]
+           }
+         });
+      </script>
+   </body>
+</html>
+
+
+
+

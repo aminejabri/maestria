@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+
+.color-red {
+
+	color: red;
+}
+
+.color-blue {
+
+	color: blue;
+}
+
+.color-white {
+
+	color: white;
+}
+
+.color-pistache {
+
+	color: #356E5E!important;
+}
+
+.color-rose {
+
+	color: #f55656;
+}
+
+.color-yellow {
+
+	color: yellow;
+}
+
+.color-green {
+
+	color: green;
+}
+
+.color-gray {
+
+	color: gray;
+}
+
+.color-orange {
+
+	color: orange;
+}
+
+.color-black {
+
+	color: black !important;
+}
+
+.color-dark-yellow {
+
+	color: #999900;
+}
+
+.shadow-rose {
+
+	text-shadow: -1px 0 black, 0 1px #f55656, 1px 0 #f55656, 0 -1px #f55656;
+}
+.shadow-noir {
+
+	text-shadow: -1px 0 black, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+

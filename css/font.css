@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+
+.font-MTCors {
+
+	font-family: Monotype Corsiva;
+}
+
+.font-light {
+
+	font-weight: lighter;
+}
+.font-center {
+
+  text-align: center;
+}
+
