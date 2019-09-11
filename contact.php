@@ -2,10 +2,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require './lib/PHPMailer/src/Exception.php';
-require './lib/PHPMailer/src/PHPMailer.php';
-require './lib/PHPMailer/src/SMTP.php';
- 
+require 'vendor/autoload.php';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $message_name = $_POST["message-name"];
