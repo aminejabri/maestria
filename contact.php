@@ -183,7 +183,7 @@ else  {
             $("#contact-submit").click(function(){
 
                 $.post(
-                    'http://localhost/maestria/contact.php', // Un script PHP que l'on va créer juste après
+                    'contact.php', // Un script PHP que l'on va créer juste après
                     {
                         'message-name': $("#name").val(),
                         'message-email': $("#email").val(),
