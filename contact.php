@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Set who the message is to be sent from
     $mail->setFrom('maestria.association@gmail.com', 'Site De Maestria');
     //Set who the message is to be sent to
-    $mail->addAddress('mo.amine.jabri@gmail.com', 'Francis TROPINI');
+    $mail->addAddress('francis.tropini@sfr.fr', 'Francis TROPINI');
     //Set the subject line
     $mail->Subject = "Message de ". $message_name .", visiteur de association-maestria.com";
 
