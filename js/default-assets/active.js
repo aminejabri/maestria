@@ -141,31 +141,5 @@
 
 })(jQuery);
 
-$(document).ready(function(){
 
-    $("#contact-submit").click(function(){
-
-        $.post(
-            'http://www.maestria.ovh/index.php/wp-json/contact-form-7/v1/contact-forms/53/feedback', // Un script PHP que l'on va créer juste après
-            {
-              '_wpcf7': '53',
-              '_wpcf7_version': '5.1.3',
-              '_wpcf7_locale': 'fr_FR',
-              '_wpcf7_unit_tag': 'wpcf7-f53-p7-o1',
-              '_wpcf7_container_post': '7',
-              'message-name': $("#name").val(),
-              'message-email': $("#email").val(),
-              'your-message': $("#message").val()
-            },
-
-            function(data){ 
-              alert("Message envoyer avec Success");
-            },
-
-            'text' // Nous souhaitons recevoir "Success" ou "Failed", donc on indique text !
-         );
-
-    });
-
-});
 
